@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Портфолио видеографа</title>
+<meta name="description" content="Портфолио видеографа">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#top" id="brand"></a>
+  <nav aria-label="Разделы">
+    <a href="#works">Работы</a>
+    <a href="#about">Обо мне</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-text">
+      <h1 id="heroName"></h1>
+      <p id="heroRole"></p>
+      <button class="hero-play" id="heroPlay" type="button" hidden></button>
+    </div>
+  </section>
+
+  <section class="works" id="works" aria-label="Работы">
+    <div class="filters" id="filters" role="group" aria-label="Фильтр по категории"></div>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>Работы скоро появятся.</p>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-photo" id="aboutPhoto" hidden></div>
+    <div class="about-text">
+      <h2>Обо мне</h2>
+      <div id="aboutText"></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Контакты</h2>
+    <ul id="contactList"></ul>
+  </section>
+</main>
+
+<footer id="footer"></footer>
+
+<dialog id="player" aria-label="Видео">
+  <button class="close" id="close" type="button" aria-label="Закрыть видео">Закрыть</button>
+  <div class="frame" id="frame"></div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>

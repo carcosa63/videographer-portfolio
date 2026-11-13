@@ -1,0 +1,31 @@
+{
+  "works": [
+    {
+      "title": "Пример работы 1",
+      "category": "Клипы",
+      "year": "2026",
+      "cover": "",
+      "video_url": "",
+      "description": "Это пример. Удалите его в админке и добавьте настоящие работы.",
+      "featured": false
+    },
+    {
+      "title": "Пример работы 2",
+      "category": "Свадьбы",
+      "year": "2026",
+      "cover": "",
+      "video_url": "",
+      "description": "",
+      "featured": false
+    },
+    {
+      "title": "Пример работы 3",
+      "category": "Реклама",
+      "year": "2025",
+      "cover": "",
+      "video_url": "",
+      "description": "",
+      "featured": false
+    }
+  ]
+}
