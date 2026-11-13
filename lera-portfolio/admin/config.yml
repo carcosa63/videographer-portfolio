@@ -1,7 +1,7 @@
 # Замените ВАШ_ЛОГИН на логин владельца репозитория на GitHub
 backend:
   name: github
-  repo: ВАШ_ЛОГИН/lera-portfolio
+  repo: carcosa63/lera-portfolio
   branch: main
 
 locale: ru
