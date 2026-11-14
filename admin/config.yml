@@ -7,8 +7,8 @@ locale: ru
 # Сайт лежит в папке lera-portfolio внутри репозитория
 media_folder: lera-portfolio/images/uploads
 public_folder: /images/uploads
-site_url: https://venerable-cassata-046f4c.netlify.app
-display_url: https://venerable-cassata-046f4c.netlify.app
+site_url: https://portfolio-melecksa.netlify.app
+display_url: https://portfolio-melecksa.netlify.app
 
 collections:
   - name: content
