@@ -5,7 +5,7 @@ backend:
 
 locale: ru
 # Сайт лежит в папке lera-portfolio внутри репозитория
-media_folder: lera-portfolio/images/uploads
+media_folder: images/uploads
 public_folder: /images/uploads
 site_url: https://portfolio-melecksa.netlify.app
 display_url: https://portfolio-melecksa.netlify.app
@@ -16,7 +16,7 @@ collections:
     files:
       - name: video
         label: Видео
-        file: lera-portfolio/content/video.json
+        file: content/video.json
         fields:
           - label: Видео (первое в списке показывается первым, порядок меняется перетаскиванием)
             name: videos
@@ -33,7 +33,7 @@ collections:
 
       - name: photo
         label: Фото
-        file: lera-portfolio/content/photo.json
+        file: content/photo.json
         fields:
           - label: Категории (порядок меняется перетаскиванием)
             name: albums
@@ -51,7 +51,7 @@ collections:
 
       - name: site
         label: Главная и контакты
-        file: lera-portfolio/content/site.json
+        file: content/site.json
         fields:
           - { label: "Фамилия и имя (например: Медведева Валерия)", name: name, widget: string }
           - { label: "О себе (абзацы разделяйте пустой строкой)", name: about, widget: text, required: false }
