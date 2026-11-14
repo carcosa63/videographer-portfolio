@@ -1,0 +1,25 @@
+{
+  "albums": [
+    {
+      "title": "Репортаж",
+      "year": "2026",
+      "photos": [
+        "/images/sample/s1.svg",
+        "/images/sample/s2.svg",
+        "/images/sample/s3.svg",
+        "/images/sample/s4.svg",
+        "/images/sample/s5.svg",
+        "/images/sample/s6.svg"
+      ]
+    },
+    {
+      "title": "Портреты",
+      "year": "2025",
+      "photos": [
+        "/images/sample/s3.svg",
+        "/images/sample/s2.svg",
+        "/images/sample/s4.svg"
+      ]
+    }
+  ]
+}

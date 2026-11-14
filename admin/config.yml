@@ -1,0 +1,61 @@
+backend:
+  name: github
+  repo: carcosa63/videographer-portfolio
+  branch: main
+
+locale: ru
+# Сайт лежит в папке lera-portfolio внутри репозитория
+media_folder: lera-portfolio/images/uploads
+public_folder: /images/uploads
+site_url: https://venerable-cassata-046f4c.netlify.app
+display_url: https://venerable-cassata-046f4c.netlify.app
+
+collections:
+  - name: content
+    label: Сайт
+    files:
+      - name: video
+        label: Видео
+        file: lera-portfolio/content/video.json
+        fields:
+          - label: Видео (первое в списке показывается первым, порядок меняется перетаскиванием)
+            name: videos
+            widget: list
+            label_singular: видео
+            summary: "{{fields.category}}: {{fields.title}}"
+            fields:
+              - { label: "Тип (Репортаж, Промо, Клип…)", name: category, widget: string }
+              - { label: Название, name: title, widget: string, required: false }
+              - { label: Год, name: year, widget: string, required: false }
+              - { label: Ссылка на видео (YouTube или Vimeo), name: video_url, widget: string }
+              - { label: Обложка (для YouTube можно не загружать), name: cover, widget: image, required: false }
+              - { label: Описание, name: description, widget: text, required: false }
+
+      - name: photo
+        label: Фото
+        file: lera-portfolio/content/photo.json
+        fields:
+          - label: Категории (порядок меняется перетаскиванием)
+            name: albums
+            widget: list
+            label_singular: категорию
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Название категории (Репортажи, Портреты…), name: title, widget: string }
+              - { label: Год, name: year, widget: string, required: false }
+              - label: Фото в этой категории (первые три видны на странице «Фото»)
+                name: photos
+                widget: list
+                label_singular: фото
+                field: { label: Фото, name: image, widget: image }
+
+      - name: site
+        label: Главная и контакты
+        file: lera-portfolio/content/site.json
+        fields:
+          - { label: "Фамилия и имя (например: Медведева Валерия)", name: name, widget: string }
+          - { label: "О себе (абзацы разделяйте пустой строкой)", name: about, widget: text, required: false }
+          - { label: Email, name: email, widget: string, required: false }
+          - { label: Telegram (без @), name: telegram, widget: string, required: false }
+          - { label: ВКонтакте (короткое имя страницы), name: vk, widget: string, required: false }
+          - { label: Instagram (без @), name: instagram, widget: string, required: false }
