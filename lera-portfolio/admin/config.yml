@@ -1,11 +1,11 @@
 # Замените ВАШ_ЛОГИН на логин владельца репозитория на GitHub
 backend:
   name: github
-  repo: carcosa63/lera-portfolio
+  repo: carcosa63/videographer-portfolio
   branch: main
 
 locale: ru
-media_folder: images/uploads
+media_folder: lera-portfolio/images/uploads
 public_folder: /images/uploads
 site_url: https://lera-portfolio.netlify.app
 display_url: https://lera-portfolio.netlify.app
@@ -16,7 +16,7 @@ collections:
     files:
       - name: works
         label: Работы
-        file: content/works.json
+        file: lera-portfolio/content/works.json
         fields:
           - label: Работы (первая в списке показывается первой; порядок меняется перетаскиванием)
             name: works
@@ -37,7 +37,7 @@ collections:
 
       - name: site
         label: Об авторе и контакты
-        file: content/site.json
+        file: lera-portfolio/content/site.json
         fields:
           - { label: Имя, name: name, widget: string }
           - { label: Кто вы, name: role, widget: string, default: Видеограф }
