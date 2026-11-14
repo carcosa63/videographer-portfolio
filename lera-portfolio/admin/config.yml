@@ -7,9 +7,8 @@ backend:
 locale: ru
 media_folder: lera-portfolio/images/uploads
 public_folder: /images/uploads
-site_url: https://lera-portfolio.netlify.app
-display_url: https://lera-portfolio.netlify.app
-
+site_url: https://portfolio-melecksa.netlify.app
+display_url: https://portfolio-melecksa.netlify.app
 collections:
   - name: content
     label: Сайт
